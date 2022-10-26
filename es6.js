@@ -1,13 +1,20 @@
+// 1. Template strings (literals)
+
+// Cum introducem variabile in interiorul unui string?
 // < ES6
 let name = "Bob";
 let location = "Timisoara";
 let message = "Salut, sunt " + name + " din " + location + " .";
-
 console.log(message);
 
 // > ES6
 let newMessage = `Salut, sunt ${name} din ${location} .`;
+console.log(newMessage);
 
+
+// 2. Destructuring
+
+// 2.1 Objects - Cum extragem valorile mai multor chei dintr-un obiect?
 // < ES6
 let address = {
   city: "Craiova",
@@ -30,6 +37,7 @@ console.log(city, street, number);
 // > ES9
 // const { myTown: city, myStreet: street, number } = address;
 
+// 2.2 Arrays - Cum extragem mai multe elemente dintr-un array?
 // < ES6
 const animals = ["caine", "pisica"];
 // const dog = animals[0];
@@ -39,6 +47,10 @@ const animals = ["caine", "pisica"];
 const [dog, cat] = animals;
 console.log(dog, cat);
 
+
+// 3. Spread operator
+
+// 3.1 Objects - Cum imbinam continutul a doua obiecte intr-un nou obiect?
 // < ES6
 const object1 = {
   masa: "ikea",
@@ -61,6 +73,7 @@ console.log(mobilier2);
 
 // console.log(object1, object2);
 
+// 3.2 Arrays - Cum imbinam continutul a doua array-uri intr-un nou array?
 // < ES6
 const anim1 = ["caine", "pisica"];
 const anim2 = ["vaca", "porc"];

@@ -3,23 +3,25 @@ let myCNP = "1234567890";
 console.log(myCNP[4]);
 console.log(myCNP.length);
 console.log(myCNP[myCNP.length - 1]);
-
+// Extragerea unui subsir:
 console.log("substring: " + myCNP.substring(3, 6));
 
 // let includesFive = myCNP.includes("170");
 // console.log(includesFive);
 
+// Cautarea unui subsir intr-un sir:
+let brandList = "Dacia BMW Mercedes, Porsche Audi";
+console.log(brandList.includes("Porsche,"));
 
-// let brandList = "Dacia BMW Mercedes, Porsche Audi";
-// console.log(brandList.includes("Porsche,"));
-
-
+// Inlocuirea unui subsir (dintr-un sir) cu un alt subsir:
 let sentence = "Lasa-ma papa la mare";
+// replace returneaza un nou sir, asa putem modifica partial sirul initial.
 sentence = sentence.replace("mare", "munte");
 console.log(sentence);
 
-let brandList = "Dacia,BMW,Mercedes,Porsche,Audi";
-let brands = brandList.split(",");
+// Transformarea string-ului intr-un array, dupa un separator
+let brandList2 = "Dacia,BMW,Mercedes,Porsche,Audi";
+let brands = brandList2.split(",");
 console.log(brands);
 
 
